@@ -13,10 +13,10 @@ mongoose.connect('mongodb://localhost/productsdb',{
     useUnifiedTopology: true
 });
 
+
 // bodyparser setup
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json()); 
-
 
 // routes
 routes(app);
